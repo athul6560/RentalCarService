@@ -2,6 +2,7 @@ package com.zeezaglobal.carrental.Activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -21,4 +22,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, DashboardActivity::class.java))
 
     }
+        binding.registerBtn.setOnClickListener {
+            Toast.makeText(this, "Register", Toast.LENGTH_SHORT).show()
+        }
 }}
